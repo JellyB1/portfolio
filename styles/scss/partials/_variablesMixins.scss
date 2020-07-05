@@ -1,0 +1,14 @@
+// Variables
+
+// Mixins
+@mixin logoFont() {
+	font-family: "Indie Flower", cursive;
+}
+
+@mixin mainFont() {
+	font-family: "Roboto", sans-serif;
+}
+
+@mixin headerFont() {
+	font-family: "Montserrat", sans-serif;
+}
