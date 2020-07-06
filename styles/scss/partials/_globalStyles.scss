@@ -6,21 +6,25 @@ html {
 
 h1 {
 	@include headerFont();
-	font-size: 4rem;
+	@include fontSize(40);
 	color: $primaryFont;
 }
 
 h2 {
 	@include logoFont();
-	font-size: 3rem;
+	@include fontSize(30);
 }
 
 h3 {
-	font-size: 2rem;
+	@include fontSize(25);
 }
 
 h4 {
-	font-size: 1.5rem;
+	@include fontSize(15);
+}
+
+p {
+	@include fontSize(18);
 }
 
 a {

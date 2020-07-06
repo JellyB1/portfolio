@@ -1,19 +1,13 @@
 footer {
-	background: $accentColor;
-	color: $secondaryFont;
+	background: $secondaryAccentColor;
 	min-height: 50px;
 	display: flex;
 	align-items: center;
 	
-	section,
-	ul {
+	section {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: space-between;
-	}
-
-	a {
-		color: $secondaryFont;
 	}
 }

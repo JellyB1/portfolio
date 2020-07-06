@@ -243,21 +243,30 @@ html {
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 40px;
   font-size: 4rem;
   color: #2d2d2f;
 }
 
 h2 {
   font-family: "Indie Flower", cursive;
+  font-size: 30px;
   font-size: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 h4 {
+  font-size: 15px;
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 a {
@@ -277,6 +286,38 @@ img {
 
 .bold {
   font-weight: 700;
+}
+
+.mediaNav {
+  width: 20%;
+}
+
+.mediaNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mediaNav a {
+  font-size: 25px;
+  font-size: 2.5rem;
+  color: #008080;
+  -webkit-transition: color ease-in-out 0.35s;
+  transition: color ease-in-out 0.35s;
+}
+
+.mediaNav a:hover, .mediaNav a:focus {
+  color: #2d2d2f;
 }
 
 header {
@@ -362,6 +403,25 @@ header nav {
 
 .bio {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bio p {
+  text-align: center;
+  width: 60%;
+  margin-bottom: 3%;
 }
 
 .aboutImgContainer {
@@ -373,11 +433,11 @@ header nav {
   background-position: center;
   background: url("./assets/self.jpg") no-repeat center;
   background-size: cover;
+  margin: 5% auto;
 }
 
 footer {
-  background: #008080;
-  color: #eee;
+  background: #d2dae2;
   min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,8 +447,7 @@ footer {
           align-items: center;
 }
 
-footer section,
-footer ul {
+footer section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,8 +461,4 @@ footer ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-footer a {
-  color: #eee;
 }
