@@ -1,6 +1,16 @@
 // Variables
+$primaryFont: #2d2d2f;
+$secondaryFont: #eee;
 
+// $primaryColor: ;
+// $secondaryColor: ;
+$accentColor: #008080;
 // Mixins
+@mixin fontSize($sizeValue){
+	font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
 @mixin logoFont() {
 	font-family: "Indie Flower", cursive;
 }

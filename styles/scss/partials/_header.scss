@@ -1,0 +1,49 @@
+header {
+	height: 100vh;
+	//  linear-gradient( rgba(255,255,255,0.5), rgba(38,213,237,0.2)), 
+	background:url("./assets/landingImage") no-repeat fixed center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+
+	nav {
+		background-color: rgba(210, 218, 226, 0.86);
+		border-bottom: 3px solid $primaryFont;
+		position: fixed;
+		width: 100%;
+	}
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	
+	h2 {
+		width: 20%;
+	}
+	
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 60%;
+	}
+
+	li {
+		@include fontSize(20);
+		// display: flex;
+		
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+	height: 50%;
+}	

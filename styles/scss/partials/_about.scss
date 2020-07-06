@@ -1,0 +1,19 @@
+#about {
+	margin-top: 2%;
+}
+
+.bio {
+	width: 100%;
+}
+
+.aboutImgContainer {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px dotted $accentColor;
+	background-position: center;
+	background: url("./assets/self.jpg") no-repeat center;
+	background-size: cover;
+}
+

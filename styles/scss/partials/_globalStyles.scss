@@ -1,12 +1,17 @@
 html {
+	@include mainFont();
 	font-size: 10px;
+	font-weight: 400;
 }
 
 h1 {
+	@include headerFont();
 	font-size: 4rem;
+	color: $primaryFont;
 }
 
 h2 {
+	@include logoFont();
 	font-size: 3rem;
 }
 
@@ -14,10 +19,25 @@ h3 {
 	font-size: 2rem;
 }
 
+h4 {
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: $primaryFont;
+}
+
+img {
+	width: 100%;
+}
 
 .wrapper {
 	margin: 0px auto;
 	width: 90%;
 	max-width: 1500px;
-	background: red;
+}
+
+.bold {
+	font-weight: 700;
 }
