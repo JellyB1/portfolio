@@ -586,10 +586,11 @@ form h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .formField {
-  width: 45%;
+  width: 49%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,10 +601,14 @@ form h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 input {
-  width: 60%;
+  width: 70%;
+  margin: 2px;
 }
 
 label {
@@ -615,12 +620,35 @@ label {
 textarea {
   resize: none;
   padding: 10px;
+  margin: 20px 0px;
 }
 
 input,
 textarea {
   font-size: 15px;
   font-size: 1.5rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow ease-in 0.35s;
+  transition: -webkit-box-shadow ease-in 0.35s;
+  transition: box-shadow ease-in 0.35s;
+  transition: box-shadow ease-in 0.35s, -webkit-box-shadow ease-in 0.35s;
+}
+
+input:focus,
+textarea:focus {
+  -webkit-box-shadow: 2px 2px 10px #000;
+          box-shadow: 2px 2px 10px #000;
+}
+
+input[type="submit"] {
+  margin: auto;
+  -webkit-transition: background-color ease-in-out 0.35s, color ease-in-out 0.35s;
+  transition: background-color ease-in-out 0.35s, color ease-in-out 0.35s;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+  color: #eee;
+  background-color: #008080;
 }
 
 footer {
