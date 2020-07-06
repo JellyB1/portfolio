@@ -6,7 +6,7 @@ $secondaryFont: #eee;
 // $secondaryColor: ;
 $accentColor: #008080;
 $secondaryAccentColor: rgb(210, 218, 226);
-$secondaryAccentOpacity: rgba(210, 218, 226, 0.95);
+$secondaryAccentOpacity: rgba(210, 218, 226, 0.6);
 // Mixins
 @mixin fontSize($sizeValue){
 	font-size: $sizeValue * 1px;

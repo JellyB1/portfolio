@@ -225,7 +225,29 @@
 			</div>
 
 		</section>
-		<section id="contact" class="wrapper">
+		<section id="contact">
+			<div class="wrapper">
+				<form action="https://formspree.io/mayppdga" method="POST">
+					<h2>Lets chat!</h2>
+					
+					<div class="formRow">
+						<div class="formField">
+							<label for="name">Your name: </label>
+							<input type="text" name="name" placeholder="Angelica" required>
+						</div>
+
+						<div class="formField">
+							<label for="_replyto">Your email: </label>
+							<input type="email" name="_replyto" placeholder="super-cool-email@email.com" required>
+						</div>
+					</div>
+					
+					<label for="message">Your message: </label>
+					<textarea name="message" id="message" rows="30" cols="30" rows="10" placeholder="I'd love to chat with you...!" required></textarea>
+
+					<input type="submit" value="Send!">
+				</form>
+			</div>
 		
 		</section>
 	</main>

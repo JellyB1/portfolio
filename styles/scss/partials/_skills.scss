@@ -10,12 +10,6 @@
 		justify-content: center;
 		flex-flow: column wrap;
 	}
-	
-	// h2 {
-	// 	text-align: center;
-	// 	display: inline-block;
-	// 	margin: auto;
-	// }
 }
 
 .skillsContainer {
@@ -23,13 +17,13 @@
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: center;
-	width: 70%;
+	width: 60%;
 	margin: 5% auto 0px;
 }
 
 .skill {
 	width: 75px;
-	margin: 10px;
+	margin: 20px;
 
 	p {
 		@include fontSize(12);

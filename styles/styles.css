@@ -491,13 +491,13 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  width: 60%;
   margin: 5% auto 0px;
 }
 
 .skill {
   width: 75px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .skill p {
@@ -543,6 +543,84 @@ header nav {
   border-radius: 20px;
   overflow: hidden;
   border: 3px dotted #d2dae2;
+}
+
+#contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 128, 128, 0.8))), url("./assets/coffeeAndCode") no-repeat fixed center;
+  background: linear-gradient(rgba(0, 128, 128, 0.8)), url("./assets/coffeeAndCode") no-repeat fixed center;
+  background-size: cover;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(210, 218, 226, 0.6);
+  padding: 3%;
+  border-radius: 20px;
+}
+
+form h2 {
+  margin-bottom: 4%;
+}
+
+.formRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formField {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  width: 60%;
+}
+
+label {
+  font-size: 20px;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+}
+
+input,
+textarea {
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 footer {

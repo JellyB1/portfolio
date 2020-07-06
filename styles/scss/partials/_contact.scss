@@ -1,0 +1,50 @@
+#contact {
+	background: linear-gradient(rgba(0,128,128,0.8)), url("./assets/coffeeAndCode") no-repeat fixed center;
+	background-size: cover;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;	
+	width: 70%;
+	margin: auto;
+	background-color: $secondaryAccentOpacity;
+	padding: 3%;
+	border-radius: 20px;
+
+	h2 {
+		margin-bottom: 4%;
+	}
+}
+
+.formRow {
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.formField {
+	width: 45%;
+	display: flex;
+	flex-direction: row wrap;
+	// justify-content: space-between;
+	align-items: center;
+}
+input {
+	width: 60%;
+}
+label {
+	@include fontSize(20);
+	margin-right: 20px;
+}
+textarea {
+	resize: none;
+	padding: 10px;
+}
+
+input,
+textarea {
+	@include fontSize(15);
+}
