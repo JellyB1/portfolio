@@ -1,0 +1,38 @@
+#skills {
+	margin-top: 2%;
+	background-color: $secondaryAccentColor;
+	border-top: 3px dotted $accentColor;
+	border-bottom: 3px dotted $accentColor;
+	padding: 3% 0px 5%;
+	
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		flex-flow: column wrap;
+	}
+	
+	// h2 {
+	// 	text-align: center;
+	// 	display: inline-block;
+	// 	margin: auto;
+	// }
+}
+
+.skillsContainer {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	margin: 5% auto 0px;
+}
+
+.skill {
+	width: 75px;
+	margin: 10px;
+
+	p {
+		@include fontSize(12);
+		text-align: center;
+	}
+}

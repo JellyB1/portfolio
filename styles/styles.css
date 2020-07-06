@@ -246,6 +246,7 @@ h1 {
   font-size: 40px;
   font-size: 4rem;
   color: #2d2d2f;
+  margin: 20px auto;
 }
 
 h2 {
@@ -286,6 +287,25 @@ img {
 
 .bold {
   font-weight: 700;
+}
+
+main h2,
+main h4 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+}
+
+main h2::after,
+main h4::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  bottom: -10px;
+  left: 10%;
+  border-bottom: 3px solid #008080;
 }
 
 .mediaNav {
@@ -334,9 +354,10 @@ header {
 
 header nav {
   background-color: rgba(210, 218, 226, 0.86);
-  border-bottom: 3px solid #2d2d2f;
+  border-bottom: 3px solid #008080;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .navbar {
@@ -393,7 +414,6 @@ header nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
   height: 50%;
 }
 
@@ -431,9 +451,98 @@ header nav {
   border-radius: 50%;
   border: 5px dotted #008080;
   background-position: center;
-  background: url("./assets/self.jpg") no-repeat center;
+  background: url("./assets/image from iOS.jpg") no-repeat center;
   background-size: cover;
   margin: 5% auto;
+}
+
+#skills {
+  margin-top: 2%;
+  background-color: #d2dae2;
+  border-top: 3px dotted #008080;
+  border-bottom: 3px dotted #008080;
+  padding: 3% 0px 5%;
+}
+
+#skills .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 5% auto 0px;
+}
+
+.skill {
+  width: 75px;
+  margin: 10px;
+}
+
+.skill p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.projectCollection {
+  text-align: center;
+  Margin: 5% auto;
+}
+
+.projectCollection h2,
+.projectCollection h4 {
+  margin-bottom: 5%;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px auto;
+  height: auto;
+}
+
+.details,
+.projectImgContainer {
+  width: 47%;
+}
+
+.projectImgContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px dotted #d2dae2;
 }
 
 footer {
@@ -445,6 +554,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 3px dotted #008080;
 }
 
 footer section {

@@ -3,6 +3,7 @@ footer {
 	min-height: 50px;
 	display: flex;
 	align-items: center;
+	border-top: 3px dotted $accentColor;
 	
 	section {
 		display: flex;
