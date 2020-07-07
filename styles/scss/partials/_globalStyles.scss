@@ -2,6 +2,8 @@ html {
 	@include mainFont();
 	font-size: 10px;
 	font-weight: 400;
+
+	// scroll-behavior: smooth;
 }
 
 h1 {
