@@ -268,7 +268,7 @@ h4 {
 p {
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 a {
@@ -448,7 +448,7 @@ header nav {
 }
 
 #about {
-  margin-top: 2%;
+  margin: 2% auto;
 }
 
 .bio {
@@ -469,7 +469,7 @@ header nav {
 }
 
 .bio p {
-  text-align: center;
+  text-align: justify;
   width: 60%;
   margin-bottom: 3%;
 }
@@ -569,6 +569,10 @@ header nav {
   width: 47%;
 }
 
+.description {
+  text-align: left;
+}
+
 .projectImgContainer {
   border-radius: 20px;
   overflow: hidden;
@@ -580,6 +584,22 @@ header nav {
 }
 
 .techTools i {
+  color: #008080;
+}
+
+.projectLinks {
+  font-size: 15px;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+  margin: 0 auto 10px;
+}
+
+.projectLinks i {
   color: #008080;
 }
 
@@ -741,7 +761,6 @@ footer section {
 @media (max-width: 768px) {
   .bio p {
     width: 90%;
-    text-align: left;
   }
   .bio .mediaNav {
     width: 50%;
@@ -870,6 +889,9 @@ footer section {
   }
   .navbar ul a {
     padding: 5%;
+  }
+  .bio p {
+    width: 100%;
   }
   .bio .mediaNav {
     width: 70%;

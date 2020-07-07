@@ -15,7 +15,7 @@
 	.bio {
 		p {
 			width: 90%;
-			text-align: left;
+			// text-align: left;
 		}
 		
 		.mediaNav {
@@ -38,6 +38,7 @@
 		.details {
 			order: 1;
 		}
+
 		.projectImgContainer {
 			order: 0;
 		}
@@ -47,6 +48,7 @@
 	.projectImgContainer {
 		width: 90%;
 	}
+
 	.projectImgContainer {
 		margin: 40px auto;
 	}
@@ -84,8 +86,6 @@
 				color: $secondaryFont;
 			}
 		}
-
-
 
 		label {
 			display: block;
@@ -168,6 +168,10 @@
 	
 	// About 
 	.bio {
+		p {
+			width: 100%;
+			// margin: 5%;
+		}
 		.mediaNav {
 			width: 70%;
 		}

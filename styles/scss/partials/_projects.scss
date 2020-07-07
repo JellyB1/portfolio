@@ -12,12 +12,18 @@
 	align-items: center;
 	justify-content: space-between;
 	margin: 10px auto;
-	height: auto;
+	height: auto;	
 }
+
 .details, 
 .projectImgContainer {
 	width: 47%;	
 }
+
+.description {
+	text-align: left;
+}
+
 .projectImgContainer {
 	border-radius: 20px;
 	overflow: hidden;
@@ -26,6 +32,18 @@
 
 .techTools {
 	margin-bottom: 10px;
+	i {
+		color: $accentColor;
+	}
+}
+
+.projectLinks {
+	@include fontSize(15);
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	margin: 0 auto 10px;
+
 	i {
 		color: $accentColor;
 	}
