@@ -24,6 +24,12 @@ header {
 
 	h2 {
 		width: 20%;
+		transition: all 0.35s ease-in-out;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+		}
 	}	
 
 	ul {
@@ -31,10 +37,25 @@ header {
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 60%;
+		
+		a {
+			transition: all 0.35s ease-in-out;
+			
+			&:hover,
+			&:focus {
+				border-bottom: 3px dotted $accentColor;
+			}
+		}
+		
 	}
+
 
 	li {
 		@include fontSize(20);
+	}
+
+	label {
+		display: none;
 	}
 
 	input[type="checkbox"] {
