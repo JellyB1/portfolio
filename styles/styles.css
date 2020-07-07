@@ -586,6 +586,7 @@ form h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .formField {
@@ -605,8 +606,12 @@ form h2 {
           justify-content: space-between;
 }
 
+.right {
+  justify-self: flex-end;
+}
+
 input {
-  width: 70%;
+  width: 60%;
   margin: 2px;
 }
 
@@ -656,6 +661,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row wrap;
+          flex-direction: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -676,4 +685,56 @@ footer section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .formField {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    margin: 3% auto;
+  }
+  .formRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formField {
+    width: 100%;
+  }
+  label {
+    margin: 10px 0px;
+  }
+  textarea {
+    width: auto;
+    padding: 5px 0px 0px 2px;
+  }
+  footer section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer h2 {
+    margin-top: 20px;
+  }
+  footer .mediaNav {
+    margin: 20px 0px;
+    width: 80%;
+  }
+  footer h4 {
+    margin-bottom: 20px;
+  }
 }
