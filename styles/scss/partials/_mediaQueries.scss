@@ -27,6 +27,29 @@
 	.skillsContainer {
 		width: 100%;
 	}
+
+	// Projects 
+	.project {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.rightProject {
+		.details {
+			order: 1;
+		}
+		.projectImgContainer {
+			order: 0;
+		}
+	}
+
+	.details,
+	.projectImgContainer {
+		width: 90%;
+	}
+	.projectImgContainer {
+		margin: 40px auto;
+	}
 }
 
 @media (max-width: 600px) {

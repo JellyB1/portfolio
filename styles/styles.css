@@ -481,7 +481,7 @@ header nav {
   border-radius: 50%;
   border: 5px dotted #008080;
   background-position: center;
-  background: url("./assets/image from iOS.jpg") no-repeat center;
+  background: url("./assets/self.jpg") no-repeat center;
   background-size: cover;
   margin: 5% auto;
 }
@@ -573,6 +573,14 @@ header nav {
   border-radius: 20px;
   overflow: hidden;
   border: 3px dotted #d2dae2;
+}
+
+.techTools {
+  margin-bottom: 10px;
+}
+
+.techTools i {
+  color: #008080;
 }
 
 #contact {
@@ -740,6 +748,30 @@ footer section {
   }
   .skillsContainer {
     width: 100%;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .rightProject .details {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .rightProject .projectImgContainer {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .details,
+  .projectImgContainer {
+    width: 90%;
+  }
+  .projectImgContainer {
+    margin: 40px auto;
   }
 }
 
