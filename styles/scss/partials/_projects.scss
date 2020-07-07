@@ -1,13 +1,11 @@
 .projectCollection {
 	text-align: center;
 	Margin: 5% auto;
-
 	h2,
 	h4 {
 		margin-bottom: 5%;
 	}
 }
-
 .project {
 	display: flex;
 	flex-flow: row wrap;
@@ -15,17 +13,13 @@
 	justify-content: space-between;
 	margin: 10px auto;
 	height: auto;
-	
 }
-
 .details, 
 .projectImgContainer {
 	width: 47%;	
 }
-
 .projectImgContainer {
 	border-radius: 20px;
 	overflow: hidden;
 	border: 3px dotted $secondaryAccentColor;
 }
-

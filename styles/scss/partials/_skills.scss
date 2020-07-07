@@ -3,15 +3,13 @@
 	background-color: $secondaryAccentColor;
 	border-top: 3px dotted $accentColor;
 	border-bottom: 3px dotted $accentColor;
-	padding: 3% 0px 5%;
-	
+	padding: 3% 0px 5%;	
 	.wrapper {
 		display: flex;
 		justify-content: center;
 		flex-flow: column wrap;
 	}
 }
-
 .skillsContainer {
 	display: flex;
 	flex-flow: row wrap;
@@ -20,11 +18,9 @@
 	width: 60%;
 	margin: 5% auto 0px;
 }
-
 .skill {
 	width: 75px;
 	margin: 20px;
-
 	p {
 		@include fontSize(12);
 		text-align: center;
