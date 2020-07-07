@@ -700,7 +700,23 @@ footer section {
   }
 }
 
+@media (max-width: 768px) {
+  .bio p {
+    width: 90%;
+    text-align: left;
+  }
+  .bio .mediaNav {
+    width: 50%;
+  }
+  .skillsContainer {
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
+  #about {
+    margin: 5% 0px;
+  }
   form {
     width: 100%;
     margin: 3% auto;
@@ -736,5 +752,11 @@ footer section {
   }
   footer h4 {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio .mediaNav {
+    width: 70%;
   }
 }

@@ -9,7 +9,28 @@
 	}
 }
 
+@media (max-width: 768px) {
+	// About 
+	.bio {
+		p {
+			width: 90%;
+			text-align: left;
+		}
+		.mediaNav {
+			width: 50%;
+		}
+	}
+	// Skills
+	.skillsContainer {
+		width: 100%;
+	}
+}
+
 @media (max-width: 600px) {
+	// About
+	#about {
+		margin: 5% 0px;
+	}
 	// Contact form
 	form {
 		width: 100%;
@@ -42,6 +63,15 @@
 		}
 		h4 {
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	// About 
+	.bio {
+		.mediaNav {
+			width: 70%;
 		}
 	}
 }
