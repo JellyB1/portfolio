@@ -879,8 +879,8 @@ footer section {
 
 @media (max-width: 480px) {
   header {
-    background-position: center;
-    background-size: cover;
+    height: 80vh;
+    background: #d2dae2;
   }
   .intro h2 {
     text-align: center;
