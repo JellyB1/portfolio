@@ -56,6 +56,9 @@
 
 @media (max-width: 600px) {
 	// Header
+	header {
+		background-size: contain;
+	}
 	.navbar {
 		ul {
 			background-color: rgba(210, 218, 226, 0.9);
@@ -144,6 +147,10 @@
 
 @media (max-width: 480px) {
 	// Header
+	header {
+		background-position: center;
+		background-position: contain;
+	}
 	.intro {
 		h2 {
 			text-align: center;
