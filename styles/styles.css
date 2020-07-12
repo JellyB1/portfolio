@@ -309,6 +309,12 @@ main h4::after {
   border-bottom: 3px solid #008080;
 }
 
+#about,
+#skills,
+#projects {
+  margin: 50px auto;
+}
+
 .mediaNav {
   width: 20%;
 }
@@ -447,10 +453,6 @@ header nav {
   height: 50%;
 }
 
-#about {
-  margin: 2% auto;
-}
-
 .bio {
   width: 100%;
   display: -webkit-box;
@@ -487,7 +489,6 @@ header nav {
 }
 
 #skills {
-  margin-top: 2%;
   background-color: #d2dae2;
   border-top: 3px dotted #008080;
   border-bottom: 3px dotted #008080;
@@ -795,6 +796,9 @@ footer section {
 }
 
 @media (max-width: 600px) {
+  header {
+    background-position: center;
+  }
   .navbar ul {
     background-color: rgba(210, 218, 226, 0.9);
     -webkit-box-orient: vertical;
@@ -874,6 +878,10 @@ footer section {
 }
 
 @media (max-width: 480px) {
+  header {
+    background-position: center;
+    background-size: cover;
+  }
   .intro h2 {
     text-align: center;
   }
